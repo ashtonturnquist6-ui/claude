@@ -1,0 +1,30 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sea turtle hatchlings on a beach illustration">
+  <defs>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2d5ab" />
+      <stop offset="100%" stop-color="#d6b57b" />
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#79c2e1" />
+      <stop offset="100%" stop-color="#2f81ab" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="#b1d4f2" />
+  <rect y="280" width="800" height="220" fill="url(#sand)" />
+  <rect y="220" width="800" height="120" fill="url(#sea)" />
+  <g transform="translate(120 280)">
+    <ellipse cx="100" cy="70" rx="90" ry="60" fill="#9dbf8c" />
+    <circle cx="80" cy="40" r="18" fill="#6d8b5b" />
+    <path d="M 42 72 C 55 90 95 90 108 72" fill="#6d8b5b" />
+    <path d="M 35 48 C 20 70 20 90 45 94" fill="#6d8b5b" />
+    <path d="M 125 48 C 140 70 140 90 115 94" fill="#6d8b5b" />
+  </g>
+  <g transform="translate(380 310)">
+    <ellipse cx="100" cy="60" rx="85" ry="55" fill="#8a9c73" />
+    <circle cx="75" cy="35" r="16" fill="#50633e" />
+    <path d="M 38 62 C 50 78 90 78 102 62" fill="#50633e" />
+    <path d="M 30 42 C 15 60 15 80 40 83" fill="#50633e" />
+  </g>
+  <circle cx="620" cy="80" r="45" fill="#fff8d0" opacity="0.9" />
+  <circle cx="620" cy="80" r="25" fill="#f7dfa2" />
+</svg>

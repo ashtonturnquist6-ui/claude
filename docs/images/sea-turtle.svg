@@ -1,0 +1,27 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sea turtle illustration">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#39a6d8" />
+      <stop offset="100%" stop-color="#0d6f98" />
+    </linearGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6c8c3e" />
+      <stop offset="100%" stop-color="#4a6230" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#water)" />
+  <g transform="translate(200 160)">
+    <ellipse cx="220" cy="140" rx="210" ry="100" fill="url(#shell)" />
+    <circle cx="160" cy="100" r="40" fill="#3f5b42" />
+    <path d="M 50 160 Q 80 130 110 150 Q 140 170 120 200 Q 90 190 60 170 Z" fill="#3f5b42" />
+    <path d="M 310 160 Q 340 130 370 150 Q 400 170 380 200 Q 350 190 320 170 Z" fill="#3f5b42" />
+    <path d="M 130 230 Q 160 260 190 230 T 250 230 Q 220 270 180 270 Q 150 255 130 230 Z" fill="#3f5b42" />
+    <circle cx="180" cy="90" r="12" fill="#f7efd0" />
+    <circle cx="178" cy="88" r="6" fill="#0d2336" />
+    <path d="M 170 110 C 176 118 188 118 194 110" stroke="#0d2336" stroke-width="6" fill="none" stroke-linecap="round" />
+    <path d="M 70 90 Q 50 75 40 100 Q 20 130 70 130" fill="#3f5b42" />
+    <path d="M 370 90 Q 390 75 400 100 Q 420 130 370 130" fill="#3f5b42" />
+  </g>
+  <path d="M 0 350 C 150 300 300 400 450 360 S 700 420 800 380 L 800 500 L 0 500 Z" fill="#74c1e4" opacity="0.7" />
+  <path d="M 0 380 C 100 340 200 410 300 360 S 500 420 600 380 S 800 430 800 430 L 800 500 L 0 500 Z" fill="#95d7f2" opacity="0.5" />
+</svg>

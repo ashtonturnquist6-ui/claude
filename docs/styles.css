@@ -1,0 +1,238 @@
+:root {
+  --bg: #e8f6ff;
+  --card: rgba(255, 255, 255, 0.95);
+  --text: #103c62;
+  --accent: #1b75b8;
+  --muted: #4f7189;
+  --border: rgba(34, 115, 186, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 25%),
+              linear-gradient(180deg, #d8f1ff 0%, #ebf8ff 50%, #f8fcff 100%);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(180deg, rgba(19, 83, 139, 0.86), rgba(45, 118, 163, 0.75)),
+              url('onami.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 1.2rem 3rem;
+  text-align: center;
+  overflow: hidden;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  box-shadow: 0 24px 60px rgba(15, 61, 102, 0.18);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  width: 260px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 160%;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 50% 50% 0 0;
+  transform: translateX(-50%);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  letter-spacing: 0.02em;
+  animation: fadeInUp 0.9s ease forwards;
+}
+
+.hero-subtitle {
+  margin: 1rem auto 0.6rem;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.94);
+  font-weight: 600;
+  animation: fadeInUp 1.05s ease forwards;
+}
+
+.hero p {
+  margin: 0;
+  max-width: 700px;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.92);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 2rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0 24px 50px rgba(15, 61, 102, 0.08);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardFadeIn 0.9s ease-out forwards;
+}
+
+.card:nth-of-type(1) { animation-delay: 0.15s; }
+.card:nth-of-type(2) { animation-delay: 0.22s; }
+.card:nth-of-type(3) { animation-delay: 0.29s; }
+.card:nth-of-type(4) { animation-delay: 0.36s; }
+.card:nth-of-type(5) { animation-delay: 0.43s; }
+.card:nth-of-type(6) { animation-delay: 0.50s; }
+.card:nth-of-type(7) { animation-delay: 0.57s; }
+.card:nth-of-type(8) { animation-delay: 0.64s; }
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #145f8c;
+  position: relative;
+}
+
+.card h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 70px;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(27, 117, 184, 1), rgba(134, 210, 255, 1));
+}
+
+.card p,
+.card li,
+.card ol {
+  color: #2b4f70;
+}
+
+.card ul,
+.card ol {
+  margin: 1rem 0 0 1.5rem;
+}
+
+.card ul li,
+.card ol li {
+  margin-bottom: 0.9rem;
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.image-row {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.image-row figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(63, 143, 208, 0.14);
+  padding: 0.5rem;
+}
+
+.image-row img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 18px 36px rgba(16, 60, 98, 0.1);
+}
+
+figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: var(--muted);
+}
+
+.sources li {
+  margin-bottom: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .image-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding: 3rem 1rem 2.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+}
